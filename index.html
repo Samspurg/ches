@@ -10,43 +10,18 @@
  <script>
 
 		  alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
-	 alert("***MICROSOFT DEFENDER ALERT*** Threat found!");
 	 
+	 function onBeforeUnload(e) {
+    if (thereAreUnsavedChanges()) {
+        e.preventDefault();
+        e.returnValue = '';
+        return;
+    }
 
+    delete e['returnValue'];
+}
+
+window.addEventListener('beforeunload', onBeforeUnload);
 		   </script>
 
 
